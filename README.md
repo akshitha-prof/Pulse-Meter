@@ -10,6 +10,13 @@ millions of events per day.
 > extend. Run it, read every file, and make it yours before putting it on a
 > resume — an interviewer will ask you to defend the design.
 
+## Preview
+
+![PulseMeter live dashboard preview](docs/preview.png)
+
+*Representative UI preview generated from the app's real layout and the actual numbers produced by its seed data / load test. To capture live screenshots, run the app (see Quickstart) and replace `docs/preview.png`.*
+
+
 ## What it does
 - **Batch ingest API** (`POST /api/ingest`) that folds events into in-memory rollups under a single lock — high throughput without storing every row.
 - **Live metrics**: total events, ingest rate (events/sec over a rolling window), tracked cost, breakdowns by service and region, and a per-minute time series.
